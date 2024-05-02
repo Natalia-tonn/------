@@ -1,0 +1,60 @@
+
+.event{
+    padding-left: 180px;
+    padding-right: 150px;
+    color: #212121;
+
+}
+.event_header{
+    display: flex;
+    justify-content: space-between;
+   
+   
+}
+
+
+.events_boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Создаем 4 колонки */
+    grid-template-rows: repeat(2, auto); /* Создаем 2 строки */
+    gap: 36px; /* Расстояние между ячейками */
+
+}
+#event_img{
+    width: 272px;
+    height: 152px;
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+}
+h2{
+ 
+    color: #212121;
+
+}
+@media (max-width: 576px) {
+    .event{
+        padding-left: 15px;
+        padding-right: 21px;
+     
+    }
+
+    .events_boxes{
+
+        grid-template-columns: repeat(1, 1fr); 
+
+        
+    }
+    .events_boxes > :nth-child(n+4) {
+        display: none;
+      }
+      #event_img{
+        width: 96px;
+        height: 75px;
+    
+
+      }
+
+
+}

@@ -1,0 +1,132 @@
+@import url(./styles.css/header.css); 
+@import url(./styles.css/events.css); 
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 576px) {
+    body{
+        padding-left: 21px;
+        margin-left: 21px;
+    }
+    .header-container {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+      }
+    
+      .leftside, .rightside {
+        width: 100%; /* Занимать всю доступную ширину */
+      }
+    
+      #search_city {
+        display: none; /* Скрыть инпут search_city */
+      }
+    
+      #search_events {
+        order: 3; /* Изменить порядок элемента, чтобы он был после остальных */
+      }
+      .header_box{
+        flex-direction: column;
+      padding-left: 21px;
+      padding-right:14px;
+
+      }
+      h1{
+        font-size: 25px;
+      }
+      .header_box_left {
+        padding-right: 14px;
+        width: 100%;
+      }
+   
+      #bike{
+        width: 215px;
+        height: 152px;  
+    }
+    .btn_join{
+        display: none;
+    }
+    }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+  
+
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .hero-container > * {
+    width: 50%;
+  }
+  .hero img {
+    height: 300px;
+  }
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+    }
+    .hero-container > * {
+      width: 100%;
+    }
+  }
+  
+  .footer {
+    background-color: #000;
+    color: #fff;
+  }
+  .footer-container {
+    padding: 0 20px;
+  } 
+
+/* ____________ */
+
+
+
+select {
+    padding: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    appearance: none;
+    width: 100%;
+  }
+  .select {
+    position: relative;
+    display: flex;
+    width: 200px;
+  }
+  .select-arrow {
+    position: absolute;
+    top: 17px;
+    right: 14px;
+  }
+

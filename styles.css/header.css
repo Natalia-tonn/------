@@ -1,0 +1,50 @@
+
+
+.header{
+    margin-top: 71px; 
+}
+.header_box{
+    display: flex;
+    width: vh;
+    /* justify-content: center; */ 
+    padding-left: 180px;
+    /* justify-content: space-between; */
+  
+}
+
+.header_box_left{
+    padding-right: 46px;
+    width: 600px;
+}
+
+p{
+    font-size: 16px;
+}
+.btn_join{
+
+height: 36px;
+background-color: #00798A;
+color: #FFFFFF;
+border-radius: 8px;
+border: none;
+font-size: 14px;
+padding-left: 16px;
+padding-right: 16px;
+
+
+cursor: pointer;
+}
+
+h1{
+    font-size: 42px;
+    color: #212121;
+}
+p{
+    font-size: 16px;
+    color: #212121;
+}
+.bike{
+    width: 379px;
+    height: 269px;
+  
+}
